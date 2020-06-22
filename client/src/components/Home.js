@@ -22,10 +22,10 @@ export class Home extends Component {
             <div class="container">
               <button class="btn btn-danger" onClick={this.onClick}>
                 <i class="fab fa-google left"></i>
-                &nbsp;&nbsp;
+                &nbsp;&nbsp; Login
                 <a
                   class="link"
-                  href="https://accounts.google.com/o/oauth2/v2/auth?response_type=code&redirect_uri=https%3A%2F%2Fchartapplication.herokuapp.com%2Fauth%2Fgoogle%2Fcallback&scope=profile&client_id=615146106031-4pobm48t89vcn6sg42nuolg5nkt4udav.apps.googleusercontent.com"
+                  href="https://accounts.google.com/o/oauth2/v2/auth?response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fauth%2Fgoogle%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login%20profile&client_id=615146106031-4pobm48t89vcn6sg42nuolg5nkt4udav.apps.googleusercontent.com"
                 >
                   Log In With Google
                 </a>
