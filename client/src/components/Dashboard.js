@@ -20,7 +20,7 @@ export class Dashboard extends Component {
   }
 
   componentDidMount() {
-    axios.get("/api/chartdata").then((res) => {
+    axios.get("http://localhost:5000/api/chartdata").then((res) => {
       this.setState({
         avg_salary: res.data.avg_salary.Avg_Salary,
         total_placed: res.data.total_placed.Total_Placed,
@@ -49,7 +49,7 @@ export class Dashboard extends Component {
   };
 
   filterSelected = (filterdata) => {
-    axios.post("/api/datafiltered", filterdata).then((res) => {
+    axios.post("http://localhost:5000/api/datafiltered", filterdata).then((res) => {
       this.setState({
         avg_salary: res.data.avg_salary.Avg_Salary,
         total_placed: res.data.total_placed.Total_Placed,

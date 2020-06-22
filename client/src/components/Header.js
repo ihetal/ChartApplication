@@ -11,7 +11,7 @@ export class Header extends Component {
   }
   componentDidMount() {
     axios
-      .get("/api/userprofile")
+      .get("http://localhost:5000/api/userprofile")
       .then((res) => {
         this.setState({
           isAuthenticated: true,
@@ -27,7 +27,7 @@ export class Header extends Component {
       });
   }
   logout = () => {
-    axios.get("/api/logout");
+    axios.get("http://localhost:5000/api/logout");
   };
   render() {
     let redirectvar = null;

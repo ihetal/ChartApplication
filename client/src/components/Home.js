@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import "./Home.css";
-import axios from "axios";
+
 export class Home extends Component {
-  onClick = () => {
-    axios.get("/auth/google");
-  };
   render() {
     return (
       <React.Fragment>
@@ -20,9 +17,9 @@ export class Home extends Component {
               <p>Please login in to view</p>
             </div>
             <div class="container">
-              <button class="btn btn-danger" onClick={this.onClick}>
+              <button class="btn btn-danger">
                 <i class="fab fa-google left"></i>
-                &nbsp;&nbsp; Login
+                &nbsp;&nbsp;
                 <a
                   class="link"
                   href="https://accounts.google.com/o/oauth2/v2/auth?response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fauth%2Fgoogle%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login%20profile&client_id=615146106031-4pobm48t89vcn6sg42nuolg5nkt4udav.apps.googleusercontent.com"
