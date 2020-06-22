@@ -1,0 +1,36 @@
+.home {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.login {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  margin: 100px auto;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+}
+.login p {
+  font-size: 18px;
+  padding: 10px;
+  padding-left: 22%;
+  border-bottom: 1.5px solid #c9cccd;
+}
+.login button {
+  margin-left: 20%;
+  font-weight: 500;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+.link:hover {
+  color: white;
+  text-decoration: none;
+}

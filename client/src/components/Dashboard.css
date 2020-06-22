@@ -1,0 +1,54 @@
+.content {
+  padding: 20px 50px;
+  margin: 0;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  background-color: rgb(38, 42, 51);
+  text-align: center;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  margin: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+  color: #fff;
+  max-width: 300px;
+  position: relative;
+}
+.custom-table {
+  background-color: rgb(38, 42, 51);
+}
+.pagination {
+  float: right;
+}
+.pagination p {
+  padding-top: 5px;
+}
+
+.pagination h4 {
+  color: black;
+  float: left;
+  padding: 0px 16px;
+  text-decoration: none;
+}
+
+.pagination h4:hover:not(.active) {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.filter__header {
+  max-width: 200px;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+.filter__header h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.filters {
+  margin: 10px 0;
+}
